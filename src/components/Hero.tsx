@@ -1,7 +1,8 @@
 import { useGSAP } from "@gsap/react";
-import { SplitText } from "gsap/SplitText";
+import { SplitText } from "gsap/all";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
+import gsap from "gsap";
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -79,7 +80,7 @@ const Hero = () => {
         />
         <div className="body">
           <div className="content">
-            <div className="space-y-5 hidden md:block">
+            <div className="hidden space-y-5 md:block">
               <p className="subtitle">Cool. Crisp. Classic.</p>
               <p>
                 Sip the Spirit <br /> of Summer
